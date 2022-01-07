@@ -1,0 +1,15 @@
+plugins {
+    id 'restassured.java-application-conventions'
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-text'
+    implementation project(':utilities')
+    testImplementation 'junit:junit:4.+'
+}
