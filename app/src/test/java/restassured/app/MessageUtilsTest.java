@@ -5,10 +5,12 @@ package restassured.app;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.CoreMatchers.is;
 
-class MessageUtilsTest {
-    @Test void testGetMessage() {
-        assertEquals("Hello      World!", MessageUtils.getMessage());
+
+public class MessageUtilsTest {
+    @Test public void testGetMessage() {
+        assertThat(1, is(1));
     }
 }
